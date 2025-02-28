@@ -20,6 +20,14 @@ Enter Instance for SID: `<Instance_no>`
 - `<SID>`: Enter the HANA System ID for which data needs to be validated.
 - `<Instance_no>`: Enter the valid instance number of the provided HANA System SID.
 
+## Error Handling:
+
+Errors encountered during script execution are logged in the error.log file, located in the same directory as the script.
+
+## Output:
+
+The script generates an HTML report named `hana_system_info.html` in the same directory where the script is located. To view the report, open the `hana_system_info.html` file in a web browser.
+
 ## Function Descriptions:
 **get_cluster_nodes()**
 
