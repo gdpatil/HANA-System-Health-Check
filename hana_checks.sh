@@ -1,4 +1,9 @@
 #!/bin/bash
+#------------------------------------------------------
+# Author: Gaurav Patil
+# Contact: gaurav.patil@suse.com
+# VERSION_NUMBER=1.0
+#-------------------------------------------------------
 
 # Log file names
 LOG_FILE="hana_system_info.html"
