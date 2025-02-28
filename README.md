@@ -27,6 +27,7 @@ Errors encountered during script execution are logged in the error.log file, loc
 ## Output:
 
 The script generates an HTML report named `hana_system_info.html` in the same directory where the script is located. To view the report, open the `hana_system_info.html` file in a web browser.
+
 Sample report is also attached. You can download and check in browser.
 
 ## Function Descriptions:
