@@ -12,8 +12,10 @@ This script is provided as-is, without warranty of any kind. Use it at your own 
 To execute the script, provide the following inputs:
 
 $ ./hana_checks.sh
-Enter SID of Database: <SID>
-Enter Instance for SID: <Instance_no>
+
+Enter SID of Database: `<SID>`
+
+Enter Instance for SID: `<Instance_no>`
 
 - `<SID>`: Enter the HANA System ID for which data needs to be validated.
 - `<Instance_no>`: Enter the valid instance number of the provided HANA System SID.
