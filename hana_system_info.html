@@ -1,0 +1,548 @@
+<html><head><title>HANA Cluster System Info</title></head><body>
+<h2><b>HANA System health check for TST:</b></h2>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b> 1. Check cluster nodes<br><br> 2. Kernel version check<br><br> 3. Cluster packages check<br><br> 4. OS version Check<br><br> 5. DB version check<br><br> 6. System Type check<br><br> 7. saptune check<br><br> 8. Hosagent check<br><br> 9. DB status check<br><br> 10. Replication status check<br><br> 11. HA-DR provider check<br><br> 12. Hook integration check<br></b></h4>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h3><b>Checking connection to: hana1
+hana2</b></h3>
+<p>[2025-02-27 16:11:39] <span style="color:green;">[hana1] Success: Connected to node: hana1</span></p>
+<p>[2025-02-27 16:11:39] <span style="color:green;">[hana2] Success: Connected to node: hana2</span></p>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h3><b>Compare both nodes for <br> 1. Kernel version<br> 2. Cluster packages<br> 3. OS version<br> 4. DB version<br> 5. Hostagent details<br></b></h3>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>1. Kernel version<br></b></h4>
+<p>[2025-02-27 16:11:40] <span style="color:black;">[hana1] Kernel version: 5.14.21-150400.24.103-default</span></p>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>2.Cluster packages<br></b></h4>
+<pre>
+<p>[2025-02-27 16:11:40] <span style="color:black;">[hana1] Cluster packages: SAPHanaSR-doc-0.162.2-150000.4.34.1.noarch
+libcorosync_common4-2.4.6-150300.12.10.1.x86_64
+pacemaker-cli-2.1.2+20211124.ada5c3b36-150400.4.17.1.x86_64
+corosync-2.4.6-150300.12.10.1.x86_64
+corosync-qdevice-2.4.6-150300.12.10.1.x86_64
+supportutils-plugin-ha-sap-0.0.4+git.1663763480.2bbd713-150000.1.12.1.noarch
+sap-suse-cluster-connector-3.1.2-7.6.1.noarch
+SAPHanaSR-0.162.2-150000.4.34.1.noarch
+patterns-sap-hana-15.4-150400.4.5.5.x86_64</span></p>
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>3. OS version<br></b></h4>
+<pre>
+<p>[2025-02-27 16:11:40] <span style="color:black;">[hana1] OS version: VERSION="15-SP4"
+VERSION_ID="15.4"
+VARIANT_ID="sles-sap"</span></p>
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>4. DB version<br></b></h4>
+<p>[2025-02-27 16:11:47] <span style="color:black;">[hana1] DB version: 2.00.071.00.1687900751</span></p>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>5. Hostagent details<br></b></h4>
+<pre>
+<p>[2025-02-27 16:11:48] <span style="color:black;">[hana1] Hostagent details: sapconf.service                            disabled        enabled
+saphostagent.service                       enabled         disabled
+sapinit.service                            generated       -
+saprouter.service                          disabled        disabled
+SAPTST_00.service                          enabled         disabled
+saptune.service                            enabled         disabled
+SAP.slice                                  static          -</span></p>
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>1. Kernel version<br></b></h4>
+<p>[2025-02-27 16:11:48] <span style="color:black;">[hana2] Kernel version: 5.14.21-150400.24.103-default</span></p>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>2.Cluster packages<br></b></h4>
+<pre>
+<p>[2025-02-27 16:11:48] <span style="color:black;">[hana2] Cluster packages: SAPHanaSR-doc-0.162.2-150000.4.34.1.noarch
+libcorosync_common4-2.4.6-150300.12.10.1.x86_64
+pacemaker-cli-2.1.2+20211124.ada5c3b36-150400.4.17.1.x86_64
+corosync-2.4.6-150300.12.10.1.x86_64
+corosync-qdevice-2.4.6-150300.12.10.1.x86_64
+supportutils-plugin-ha-sap-0.0.4+git.1663763480.2bbd713-150000.1.12.1.noarch
+sap-suse-cluster-connector-3.1.2-7.6.1.noarch
+patterns-sap-hana-15.4-150400.4.5.5.x86_64
+SAPHanaSR-0.162.1-150000.4.31.1.noarch</span></p>
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>3. OS version<br></b></h4>
+<pre>
+<p>[2025-02-27 16:11:49] <span style="color:black;">[hana2] OS version: VERSION="15-SP4"
+VERSION_ID="15.4"
+VARIANT_ID="sles-sap"</span></p>
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>4. DB version<br></b></h4>
+<p>[2025-02-27 16:11:55] <span style="color:black;">[hana2] DB version: 2.00.071.00.1687900751</span></p>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h4><b>5. Hostagent details<br></b></h4>
+<pre>
+<p>[2025-02-27 16:11:56] <span style="color:black;">[hana2] Hostagent details: sapconf.service                            disabled        enabled
+saphostagent.service                       enabled         disabled
+sapinit.service                            generated       -
+saprouter.service                          disabled        disabled
+SAPTST_00.service                          enabled         disabled
+saptune.service                            enabled         disabled
+SAP.slice                                  static          -</span></p>
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h3><b>Comparing details between nodes</b></h3>
+<h3><b>Comparing hana1 and hana2</b></h3>
+<p>[2025-02-27 16:11:56] <span style="color:green;">[hana2] Kernel version match: hana1 (5.14.21-150400.24.103-default) vs hana2 (5.14.21-150400.24.103-default)</span></p>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<pre>
+<p>[2025-02-27 16:11:56] <span style="color:red;">[hana2] Cluster packages mismatch:</span></p>
+<p>[2025-02-27 16:11:56] <span style="color:red;">[hana2] hana1 (SAPHanaSR-doc-0.162.2-150000.4.34.1.noarch
+libcorosync_common4-2.4.6-150300.12.10.1.x86_64
+pacemaker-cli-2.1.2+20211124.ada5c3b36-150400.4.17.1.x86_64
+corosync-2.4.6-150300.12.10.1.x86_64
+corosync-qdevice-2.4.6-150300.12.10.1.x86_64
+supportutils-plugin-ha-sap-0.0.4+git.1663763480.2bbd713-150000.1.12.1.noarch
+sap-suse-cluster-connector-3.1.2-7.6.1.noarch
+SAPHanaSR-0.162.2-150000.4.34.1.noarch
+patterns-sap-hana-15.4-150400.4.5.5.x86_64)</span></p>
+<p>[2025-02-27 16:11:56] <span style="color:red;">[hana2] vs</span></p>
+<p>[2025-02-27 16:11:56] <span style="color:red;">[hana2] hana2 (SAPHanaSR-doc-0.162.2-150000.4.34.1.noarch
+libcorosync_common4-2.4.6-150300.12.10.1.x86_64
+pacemaker-cli-2.1.2+20211124.ada5c3b36-150400.4.17.1.x86_64
+corosync-2.4.6-150300.12.10.1.x86_64
+corosync-qdevice-2.4.6-150300.12.10.1.x86_64
+supportutils-plugin-ha-sap-0.0.4+git.1663763480.2bbd713-150000.1.12.1.noarch
+sap-suse-cluster-connector-3.1.2-7.6.1.noarch
+patterns-sap-hana-15.4-150400.4.5.5.x86_64
+SAPHanaSR-0.162.1-150000.4.31.1.noarch)</span></p>
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<pre>
+<p>[2025-02-27 16:11:56] <span style="color:green;">[hana2] OS version match:</span></p>
+<p>[2025-02-27 16:11:56] <span style="color:green;">[hana2] hana1 (VERSION="15-SP4"
+VERSION_ID="15.4"
+VARIANT_ID="sles-sap")</span></p>
+<p>[2025-02-27 16:11:56] <span style="color:green;">[hana2] vs</span></p>
+<p>[2025-02-27 16:11:56] <span style="color:green;">[hana2] hana2 (VERSION="15-SP4"
+VERSION_ID="15.4"
+VARIANT_ID="sles-sap")</span></p>
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<p>[2025-02-27 16:11:56] <span style="color:green;">[hana2] DB version match: hana1 (2.00.071.00.1687900751) vs hana2 (2.00.071.00.1687900751)</span></p>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<pre>
+<p>[2025-02-27 16:11:56] <span style="color:green;">[ ] Hostagent version match:</span></p>
+<p>[2025-02-27 16:11:56] <span style="color:green;">[ ] hana1 <br> sapconf.service                            disabled        enabled
+saphostagent.service                       enabled         disabled
+sapinit.service                            generated       -
+saprouter.service                          disabled        disabled
+SAPTST_00.service                          enabled         disabled
+saptune.service                            enabled         disabled
+SAP.slice                                  static          -</span></p>
+<p>[2025-02-27 16:11:56] <span style="color:green;">[ ] vs</span></p>
+<p>[2025-02-27 16:11:56] <span style="color:green;">[ ] hana2 <br> sapconf.service                            disabled        enabled
+saphostagent.service                       enabled         disabled
+sapinit.service                            generated       -
+saprouter.service                          disabled        disabled
+SAPTST_00.service                          enabled         disabled
+saptune.service                            enabled         disabled
+SAP.slice                                  static          -</span></p>
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h3><b>Check HANA System Type (scale-out or scale-up)<br></b></h3>
+<p>[2025-02-27 16:11:56] <span style="color:black;">[hana1] HANA System Type:</span></p>
+<p>[2025-02-27 16:12:03] <span style="color:green;">[hana1] Scale-Up System</span></p>
+<p>[2025-02-27 16:12:03] <span style="color:black;">[hana2] HANA System Type:</span></p>
+<p>[2025-02-27 16:12:09] <span style="color:green;">[hana2] Scale-Up System</span></p>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<p>[2025-02-27 16:12:09] <span style="color:black;">[hana1] saptune Solution Applied:</span></p>
+<p>[2025-02-27 16:12:09] <span style="color:green;">[hana1] saptune Solution Applied: HANA</span></p>
+<p>[2025-02-27 16:12:09] <span style="color:black;">[hana2] saptune Solution Applied:</span></p>
+<p>[2025-02-27 16:12:09] <span style="color:green;">[hana2] saptune Solution Applied: HANA</span></p>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h3><b>DB status check<br></b></h3>
+<p>[2025-02-27 16:12:09] <span style="color:black;">[hana1] Database Status:</span></p>
+<pre>
+Unit SAP.slice (/SAP.slice):
+├─saphostagent.service 
+│ ├─ 1950 /usr/sap/hostctrl/exe/saphostexec pf=/usr/sap/hostctrl/exe/host_profi…
+│ ├─ 2131 /usr/sap/hostctrl/exe/sapstartsrv pf=/usr/sap/hostctrl/exe/host_profi…
+│ └─ 2869 /usr/sap/hostctrl/exe/saposcol -l -w60 pf=/usr/sap/hostctrl/exe/host_…
+└─SAPTST_00.service 
+  ├─  1909 /usr/sap/TST/HDB00/exe/sapstartsrv pf=/usr/sap/TST/SYS/profile/TST_H…
+  ├─ 13307 sapstart pf=/usr/sap/TST/SYS/profile/TST_HDB00_hana1
+  ├─ 13314 /usr/sap/TST/HDB00/hana1/trace/hdb.sapTST_HDB00 -d -nw -f /usr/sap/T…
+  ├─ 13342 lss {Controller}
+  ├─ 13345 hdbnameserver
+  ├─ 13359 lss [SYSTEMDB]
+  ├─ 13361 lss [TST]
+  ├─ 14981 hdbrsutil  --start --port 30001 --volume 1 --volumesuffix mnt00001/h…
+  ├─ 16159 hdbcompileserver
+  ├─ 16162 hdbpreprocessor
+  ├─ 16195 hdbindexserver -port 30003
+  ├─ 16198 hdbxsengine -port 30007
+  ├─ 19122 hdbrsutil  --start --port 30003 --volume 3 --volumesuffix mnt00001/h…
+  └─ 20638 hdbwebdispatcher
+</pre>
+<p>[2025-02-27 16:12:10] <span style="color:black;">[hana2] Database Status:</span></p>
+<pre>
+Unit SAP.slice (/SAP.slice):
+├─saphostagent.service 
+│ ├─ 1985 /usr/sap/hostctrl/exe/saphostexec pf=/usr/sap/hostctrl/exe/host_profi…
+│ ├─ 2163 /usr/sap/hostctrl/exe/sapstartsrv pf=/usr/sap/hostctrl/exe/host_profi…
+│ └─ 2909 /usr/sap/hostctrl/exe/saposcol -l -w60 pf=/usr/sap/hostctrl/exe/host_…
+└─SAPTST_00.service 
+  ├─  1945 /usr/sap/TST/HDB00/exe/sapstartsrv pf=/usr/sap/TST/SYS/profile/TST_H…
+  ├─ 19566 sapstart pf=/usr/sap/TST/SYS/profile/TST_HDB00_hana2
+  ├─ 19573 /usr/sap/TST/HDB00/hana2/trace/hdb.sapTST_HDB00 -d -nw -f /usr/sap/T…
+  ├─ 19600 lss {Controller}
+  ├─ 19603 hdbnameserver
+  ├─ 19617 lss [SYSTEMDB]
+  ├─ 19619 lss [TST]
+  ├─ 21431 hdbcompileserver
+  ├─ 21434 hdbpreprocessor
+  ├─ 21468 hdbindexserver -port 30003
+  ├─ 21471 hdbxsengine -port 30007
+  ├─ 21523 hdbrsutil  --start --port 30001 --volume 1 --volumesuffix mnt00001/h…
+  ├─ 24814 hdbwebdispatcher
+  └─ 24919 hdbrsutil  --start --port 30003 --volume 3 --volumesuffix mnt00001/h…
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h3><b>Replication status check<br></b></h3>
+<p>[2025-02-27 16:12:10] <span style="color:black;">[hana1] Replication Status:</span></p>
+<pre>
+|Database |Host  |Port  |Service Name |Volume ID |Site ID |Site Name |Secondary |Secondary |Secondary |Secondary |Secondary     |Replication |Replication |Replication    |Secondary    |
+|         |      |      |             |          |        |          |Host      |Port      |Site ID   |Site Name |Active Status |Mode        |Status      |Status Details |Fully Synced |
+|-------- |----- |----- |------------ |--------- |------- |--------- |--------- |--------- |--------- |--------- |------------- |----------- |----------- |-------------- |------------ |
+|SYSTEMDB |hana1 |30001 |nameserver   |        1 |      1 |site1     |hana2     |    30001 |        2 |site2     |YES           |SYNC        |ACTIVE      |               |        True |
+|TST      |hana1 |30007 |xsengine     |        2 |      1 |site1     |hana2     |    30007 |        2 |site2     |YES           |SYNC        |ACTIVE      |               |        True |
+|TST      |hana1 |30003 |indexserver  |        3 |      1 |site1     |hana2     |    30003 |        2 |site2     |YES           |SYNC        |ACTIVE      |               |        True |
+
+status system replication site "2": ACTIVE
+overall system replication status: ACTIVE
+
+Local System Replication State
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+mode: PRIMARY
+site id: 1
+site name: site1
+
+System Replication State
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+online: true
+
+mode: primary
+operation mode: primary
+site id: 1
+site name: site1
+
+is source system: true
+is secondary/consumer system: false
+has secondaries/consumers attached: true
+is a takeover active: false
+is primary suspended: false
+
+Host Mappings:
+~~~~~~~~~~~~~~
+
+hana1 -> [site2] hana2
+hana1 -> [site1] hana1
+
+
+Site Mappings:
+~~~~~~~~~~~~~~
+site1 (primary/primary)
+    |---site2 (sync/logreplay)
+
+Tier of site1: 1
+Tier of site2: 2
+
+Replication mode of site1: primary
+Replication mode of site2: sync
+
+Operation mode of site1: primary
+Operation mode of site2: logreplay
+
+Mapping: site1 -> site2
+
+Hint based routing site: 
+done.
+</pre>
+<p>[2025-02-27 16:12:12] <span style="color:black;">[hana2] Replication Status:</span></p>
+<pre>
+this system is either not running or not primary system replication site
+
+Local System Replication State
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+mode: SYNC
+site id: 2
+site name: site2
+active primary site: 1
+primary masters: hana1
+
+System Replication State
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+online: true
+
+mode: sync
+operation mode: logreplay
+site id: 2
+site name: site2
+
+is source system: false
+is secondary/consumer system: true
+has secondaries/consumers attached: false
+is a takeover active: false
+is primary suspended: false
+is timetravel enabled: false
+replay mode: auto
+active primary site: 1
+
+primary masters: hana1
+
+Host Mappings:
+~~~~~~~~~~~~~~
+
+hana2 -> [site2] hana2
+hana2 -> [site1] hana1
+
+
+Site Mappings:
+~~~~~~~~~~~~~~
+site1 (primary/primary)
+    |---site2 (sync/logreplay)
+
+Tier of site1: 1
+Tier of site2: 2
+
+Replication mode of site1: primary
+Replication mode of site2: sync
+
+Operation mode of site1: primary
+Operation mode of site2: logreplay
+
+Mapping: site1 -> site2
+
+Hint based routing site: 
+done.
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h3><b>HA-DR provider check<br></b></h3>
+<p>[2025-02-27 16:12:13] <span style="color:black;">[hana1] HA/DR Providers:</span></p>
+<pre>
+# global.ini last modified 2024-03-13 10:28:48.166184 by hdbnameserver 
+[database_initial_encryption]
+backup_encryption = on
+persistence_encryption = on
+log_encryption = on
+
+[ha_dr_provider_SAPHanaSR]
+provider = SAPHanaSR
+path = /usr/share/SAPHanaSR
+execution_order = 1
+
+[ha_dr_provider_suschksrv]
+provider = susChkSrv
+path = /usr/share/SAPHanaSR
+execution_order = 3
+action_on_lost = fence
+
+[multidb]
+mode = multidb
+database_isolation = low
+singletenant = yes
+
+[persistence]
+basepath_datavolumes = /hana/data/TST
+basepath_logvolumes = /hana/log/TST
+
+[system_replication]
+mode = primary
+actual_mode = primary
+site_id = 1
+site_name = site1
+timetravel_logreplay_mode = auto
+operation_mode = logreplay
+register_secondaries_on_takeover = true
+
+[trace]
+ha_dr_saphanasr = info
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<p>[2025-02-27 16:12:13] <span style="color:black;">[hana1] Sudoers entries:</span></p>
+<pre>
+Cmnd_Alias SOK_SITE1   = /usr/sbin/crm_attribute -n hana_tst_site_srHook_site1 -v SOK   -t crm_config -s SAPHanaSR
+Cmnd_Alias SFAIL_SITE1  = /usr/sbin/crm_attribute -n hana_tst_site_srHook_site1 -v SFAIL -t crm_config -s SAPHanaSR
+Cmnd_Alias SOK_SITE2   = /usr/sbin/crm_attribute -n hana_tst_site_srHook_site2 -v SOK   -t crm_config -s SAPHanaSR
+Cmnd_Alias SFAIL_SITE2  = /usr/sbin/crm_attribute -n hana_tst_site_srHook_site2 -v SFAIL -t crm_config -s SAPHanaSR
+Cmnd_Alias HOOK_HELPER  = /usr/sbin/SAPHanaSR-hookHelper --sid=TST --case=checkTakeover
+
+tstadm ALL=(ALL) NOPASSWD: SOK_SITE1, SFAIL_SITE1, SOK_SITE2, SFAIL_SITE2, HOOK_HELPER
+tstadm ALL=(ALL) NOPASSWD: /usr/sbin/crm_attribute -n hana_tst_site_srHook_*
+tstadm ALL=(ALL) NOPASSWD: /usr/sbin/SAPHanaSR-hookHelper --sid=TST --case=fenceMe
+# Created by cloud-init v. 23.3-150100.8.71.1 on Thu, 15 Feb 2024 05:02:03 +0000
+
+# User rules for azureuser
+azureuser ALL=(ALL) NOPASSWD:ALL
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<p>[2025-02-27 16:12:13] <span style="color:black;">[hana2] HA/DR Providers:</span></p>
+<pre>
+# global.ini last modified 2024-03-13 10:29:50.755154 by hdbnsutil -sr_register --remoteHost=hana1 --remoteInstance=00 --replicationMode=sync --operationMode=logreplay --name=site2 
+[database_initial_encryption]
+backup_encryption = on
+persistence_encryption = on
+log_encryption = on
+
+[ha_dr_provider_SAPHanaSR]
+provider = SAPHanaSR
+path = /usr/share/SAPHanaSR
+execution_order = 1
+
+[ha_dr_provider_suschksrv]
+provider = susChkSrv
+path = /usr/share/SAPHanaSR
+execution_order = 3
+action_on_lost = fence
+
+[multidb]
+mode = multidb
+database_isolation = low
+singletenant = yes
+
+[persistence]
+basepath_datavolumes = /hana/data/TST
+basepath_logvolumes = /hana/log/TST
+
+[system_replication]
+timetravel_logreplay_mode = auto
+site_id = 2
+mode = sync
+actual_mode = sync
+site_name = site2
+operation_mode = logreplay
+
+[system_replication_site_masters]
+1 = hana1:30001
+
+[trace]
+ha_dr_saphanasr = info
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<p>[2025-02-27 16:12:14] <span style="color:black;">[hana2] Sudoers entries:</span></p>
+<pre>
+Cmnd_Alias SOK_SITE1   = /usr/sbin/crm_attribute -n hana_tst_site_srHook_site1 -v SOK   -t crm_config -s SAPHanaSR
+Cmnd_Alias SFAIL_SITE1  = /usr/sbin/crm_attribute -n hana_tst_site_srHook_site1 -v SFAIL -t crm_config -s SAPHanaSR
+Cmnd_Alias SOK_SITE2   = /usr/sbin/crm_attribute -n hana_tst_site_srHook_site2 -v SOK   -t crm_config -s SAPHanaSR
+Cmnd_Alias SFAIL_SITE2  = /usr/sbin/crm_attribute -n hana_tst_site_srHook_site2 -v SFAIL -t crm_config -s SAPHanaSR
+Cmnd_Alias HOOK_HELPER  = /usr/sbin/SAPHanaSR-hookHelper --sid=TST --case=checkTakeover
+
+tstadm ALL=(ALL) NOPASSWD: SOK_SITE1, SFAIL_SITE1, SOK_SITE2, SFAIL_SITE2, HOOK_HELPER
+tstadm ALL=(ALL) NOPASSWD: /usr/sbin/crm_attribute -n hana_tst_site_srHook_*
+tstadm ALL=(ALL) NOPASSWD: /usr/sbin/SAPHanaSR-hookHelper --sid=TST --case=fenceMe
+# Created by cloud-init v. 23.3-150100.8.71.1 on Thu, 15 Feb 2024 05:10:52 +0000
+
+# User rules for azureuser
+azureuser ALL=(ALL) NOPASSWD:ALL
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<h3><b>Hook integration check<br></b></h3>
+<p>[2025-02-27 16:12:14] <span style="color:black;">[] Hook Integration:</span></p>
+<pre>
+nameserver_hana1.30001.000.trc:[2933]{-1}[-1/-1] 2024-02-15 07:38:42.335869 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'SAPHanaSR' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.000.trc:[2933]{-1}[-1/-1] 2024-02-15 07:38:42.893458 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.000.trc:[11901]{-1}[-1/-1] 2024-02-15 07:48:54.673240 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'SAPHanaSR' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.000.trc:[11901]{-1}[-1/-1] 2024-02-15 07:48:55.062433 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.000.trc:[16290]{-1}[-1/-1] 2024-02-15 13:34:43.229043 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'SAPHanaSR' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.000.trc:[2936]{-1}[-1/-1] 2024-02-15 07:38:42.892861 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana1.30001.000.trc:[11904]{-1}[-1/-1] 2024-02-15 07:48:55.061801 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana1.30001.000.trc:[16293]{-1}[-1/-1] 2024-02-15 13:34:43.621376 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana1.30001.000.trc:[29541]{-1}[-1/-1] 2024-02-15 14:06:01.061147 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana1.30001.001.trc:[31572]{-1}[-1/-1] 2024-02-15 14:51:06.811734 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana1.30001.000.trc:[2933]{-1}[-1/-1] 2024-02-15 07:38:42.893458 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.000.trc:[11901]{-1}[-1/-1] 2024-02-15 07:48:55.062433 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.000.trc:[16290]{-1}[-1/-1] 2024-02-15 13:34:43.621988 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.000.trc:[29538]{-1}[-1/-1] 2024-02-15 14:06:01.061809 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.001.trc:[31569]{-1}[-1/-1] 2024-02-15 14:51:06.812343 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana1.30001.000.trc:[2936]{-1}[-1/-1] 2024-02-15 07:38:43.083571 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+nameserver_hana1.30001.000.trc:[11904]{-1}[-1/-1] 2024-02-15 07:48:55.216614 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+nameserver_hana1.30001.000.trc:[16293]{-1}[-1/-1] 2024-02-15 13:34:43.775633 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+nameserver_hana1.30001.000.trc:[29541]{-1}[-1/-1] 2024-02-15 14:06:01.217739 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+nameserver_hana1.30001.001.trc:[31572]{-1}[-1/-1] 2024-02-15 14:51:06.966032 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+2024-02-15 07:38:43.083439  [1707982723-15102] init called
+2024-02-15 07:38:43.083516  [1707982723-15102] susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+2024-02-15 07:39:25.379139  [1707982765-17151] START: indexserver event looks like graceful tenant start
+2024-02-15 07:39:57.274336  [1707982797-16060] START: indexserver event looks like graceful tenant start
+2024-02-15 07:40:13.766533  [1707982813-15022] START: indexserver event looks like graceful tenant start (indexserver started)
+nameserver_hana1.30001.000.trc:[4396]{-1}[-1/-1] 2024-02-15 07:39:26.293148 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site2 -v SFAIL -t crm_config -s SAPHanaSR> rc=0
+nameserver_hana1.30001.000.trc:[4375]{-1}[3/-1] 2024-02-15 07:40:13.312381 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site2 -v SFAIL -t crm_config -s SAPHanaSR> rc=0
+nameserver_hana1.30001.000.trc:[2936]{-1}[3/-1] 2024-02-15 07:40:16.883144 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site2 -v SFAIL -t crm_config -s SAPHanaSR> rc=0
+nameserver_hana1.30001.000.trc:[4375]{-1}[-1/-1] 2024-02-15 07:40:48.333001 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site2 -v SOK -t crm_config -s SAPHanaSR> rc=0
+nameserver_hana1.30001.000.trc:[14211]{-1}[-1/-1] 2024-02-15 07:49:30.615722 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site2 -v SFAIL -t crm_config -s SAPHanaSR> rc=0
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+<pre>
+nameserver_hana2.30001.000.trc:[2285]{-1}[-1/-1] 2024-02-15 07:38:51.600569 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'SAPHanaSR' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[2285]{-1}[-1/-1] 2024-02-15 07:38:52.360431 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[20026]{-1}[-1/-1] 2024-02-15 13:36:38.273925 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'SAPHanaSR' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[20026]{-1}[-1/-1] 2024-02-15 13:36:38.712927 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[10673]{-1}[-1/-1] 2024-02-15 14:22:12.889406 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'SAPHanaSR' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[2288]{-1}[-1/-1] 2024-02-15 07:38:52.359833 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana2.30001.000.trc:[20029]{-1}[-1/-1] 2024-02-15 13:36:38.712300 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana2.30001.000.trc:[10676]{-1}[-1/-1] 2024-02-15 14:22:13.279005 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana2.30001.000.trc:[12405]{-1}[-1/-1] 2024-02-15 14:35:07.086051 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana2.30001.000.trc:[26920]{-1}[-1/-1] 2024-02-15 15:02:29.028207 i ha_dr_SAPHanaSR  SAPHanaSR.py(00033) : SAPHanaSR init()
+nameserver_hana2.30001.000.trc:[2285]{-1}[-1/-1] 2024-02-15 07:38:52.360431 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[20026]{-1}[-1/-1] 2024-02-15 13:36:38.712927 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[10673]{-1}[-1/-1] 2024-02-15 14:22:13.279597 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[12402]{-1}[-1/-1] 2024-02-15 14:35:07.086652 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[26917]{-1}[-1/-1] 2024-02-15 15:02:29.028829 i ha_dr_provider   HADRProviderManager.cpp(00083) : loading HA/DR Provider 'susChkSrv' from /usr/share/SAPHanaSR
+nameserver_hana2.30001.000.trc:[2288]{-1}[-1/-1] 2024-02-15 07:38:52.561106 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+nameserver_hana2.30001.000.trc:[20029]{-1}[-1/-1] 2024-02-15 13:36:38.869775 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+nameserver_hana2.30001.000.trc:[10676]{-1}[-1/-1] 2024-02-15 14:22:13.432601 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+nameserver_hana2.30001.000.trc:[12405]{-1}[-1/-1] 2024-02-15 14:35:07.239742 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+nameserver_hana2.30001.000.trc:[26920]{-1}[-1/-1] 2024-02-15 15:02:29.186059 i ha_dr_susChkSrv  susChkSrv.py(00105) : susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+2024-02-15 07:38:52.560975  [1707982732-17410] init called
+2024-02-15 07:38:52.561054  [1707982732-17410] susChkSrv.init() version 0.7.7, parameter info: action_on_lost=fence stop_timeout=20 kill_signal=9
+2024-02-15 07:40:12.140734  [1707982812-15872] START: indexserver event looks like graceful tenant start
+2024-02-15 07:40:12.975169  [1707982812-12153] START: indexserver event looks like graceful tenant start
+2024-02-15 07:40:45.453268  [1707982845-12920] START: indexserver event looks like graceful tenant start (indexserver started)
+nameserver_hana2.30001.000.trc:[21538]{-1}[-1/-1] 2024-02-15 14:06:52.109681 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site1 -v SOK -t crm_config -s SAPHanaSR> rc=0
+nameserver_hana2.30001.000.trc:[29268]{-1}[-1/-1] 2024-02-15 14:51:57.555131 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site1 -v SOK -t crm_config -s SAPHanaSR> rc=0
+nameserver_hana2.30001.000.trc:[23658]{-1}[-1/-1] 2024-02-15 15:00:14.373297 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site1 -v SFAIL -t crm_config -s SAPHanaSR> rc=0
+nameserver_hana2.30001.000.trc:[2334]{-1}[-1/-1] 2024-02-15 15:00:15.187696 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site1 -v SFAIL -t crm_config -s SAPHanaSR> rc=0
+nameserver_hana2.30001.000.trc:[2333]{-1}[-1/-1] 2024-02-15 15:00:15.241474 i ha_dr_SAPHanaSR  SAPHanaSR.py(00074) : SAPHanaSR.srConnectionChanged() CALLING CRM: <sudo /usr/sbin/crm_attribute -n hana_tst_site_srHook_site1 -v SFAIL -t crm_config -s SAPHanaSR> rc=0
+</pre>
+<hr style="border-color: green;">
+<hr style="border-color: black;">
+</body></html>
